@@ -140,9 +140,15 @@ nav ul li a:hover {
 	border-bottom: 4px solid #27a1ce;
 }
 
+
 #wics img {
 	max-width: 100%;
 	margin: auto;
+}
+
+#monthly p{
+	padding-left: 40px;
+	padding-right: 40px;
 }
 
 h1 {
@@ -184,6 +190,11 @@ img {
 	height: auto;
 	max-width: 800px;
 }
+
+/*.sponsers img {
+	display: inline-block;
+	width: 180px;
+}*/
 
 .responsive-calendar {
 	position: relative;
