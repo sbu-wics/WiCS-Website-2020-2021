@@ -1,0 +1,372 @@
+@text-color: #2B2B2B;
+@nav-bg-color: #d6907e;
+@nav-text-color: white;
+@nav-text-hover-color: darken(@nav-text-color, 15%);
+@header-bg-color: #1E1E1E;
+@wwww-text-color: #D6D6D6;
+@description-bg-color: lighten(@nav-bg-color, 8%);
+@description-text-color: @text-color;
+@schedule-bg-color: lighten(@nav-bg-color, 15%);
+@bottom-divider-color: lighten(@schedule-bg-color, 9%);
+@bottom-bg-color: lighten(@nav-bg-color, 29%);
+@modal-bg-color: lighten(@nav-bg-color, 25%);
+@modal-divider-color: lighten(@nav-bg-color, 12%);
+@link-color: #199FCB;
+@default-bg-color: #622;
+@nav-bar-height: 50px;
+@background-offset: -50px;
+@width: 100%;
+
+body {
+  padding-top: @nav-bar-height;
+  background: @default-bg-color url('img/background.jpg') fixed center @nav-bar-height + @background-offset;
+  background-size: cover;
+  font-size: 16px;
+  color: @text-color;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .content .container {
+    max-width: 730px;
+  }
+}
+
+.blockquote {
+  border-left: 5px solid red;
+}
+
+.image_holder {
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.social {
+  background: black;
+  height: 52px;
+}
+
+.responsive {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.navbar {
+  background: black;
+  color: white;
+  border: none;
+
+  background-image: linear-gradient(to bottom, lighten(@nav-bg-color, 9%) 0, darken(@nav-bg-color, 9%) 100%);
+
+  .nag {
+
+  }
+
+  .navbar-header, .nav>li>{
+    font-size: 14px;
+    {}
+    >a {
+      color: @nav-text-color;
+      text-shadow: 0 1px 0 lighten(@nav-text-color, 40%);
+    }
+
+    >a:hover {
+      color: @nav-text-hover-color;
+    }
+
+    >a:focus {
+      color: @nav-text-color;
+    }
+  }
+
+  .nav {
+    font-size: 14px;
+    color: white;
+  }
+
+  .nav-color {
+    color: white;
+  }
+
+  .navbar-toggle {
+    border-color: @nav-text-color;
+    .icon-bar {
+      background-color: @nav-text-color;
+    }
+  }
+
+  .navbar-toggle:hover {
+    background-color: @nav-text-color;
+    .icon-bar {
+      background-color: @nav-bg-color;
+    }
+  }
+
+  .navbar-collapse {
+    border-top-color: lighten(@nav-text-color, 14%);
+  }
+}
+
+header {
+  padding: 2% 5%;
+  opacity: 0.6;
+  background-color: @header-bg-color;
+  #banner {
+    height: 20rem;
+    background: @header-bg-color url('img/hackhealth_logo2018Edited.png') no-repeat center;
+    background-size: contain;
+    max-width: 2127px;
+    max-height: 324px;
+  }
+}
+
+.hack_health_banner {
+  width: 1353px;
+  position: relative;
+  left: -47%;
+}
+
+a, a:hover {
+  color: @link-color;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.full-weight {
+  font-weight: bold;
+}
+
+.content {
+  color: @wwww-text-color;
+  text-align: center;
+  padding-bottom: 36px;
+
+  hr {
+    border-color: @wwww-text-color;
+  }
+
+  .col-sm-6 {
+    max-width: 360px;  /* Prevent lines from being too long on tablet */
+    margin: auto;
+  }
+
+  .btn-pink {
+    @pink: #DC8387;
+    color: #000;
+    border-color: @pink;
+    background-image: linear-gradient(to bottom, lighten(@pink, 5%) 0, darken(@pink, 5%) 100%);
+  }
+
+  .wwww {
+    .row>div {
+      margin-bottom: 26px;
+    }
+  }
+  .description {
+    max-width: 600px;
+    background-color: @description-bg-color;
+    opacity: 0.92;
+    color: @description-text-color;
+    border-radius: 5px;
+    text-align: left;
+    margin: 40px auto 10px auto;
+    padding: 18px 20px 4px 22px;
+
+    blockquote {
+      border-left-color: @description-text-color;
+      font-weight: 300;
+    }
+  }
+}
+
+.bottom {
+  background-color: @bottom-bg-color;
+  width: 100%;
+  text-align: center;
+
+  hr {
+    border-color: @bottom-divider-color
+  }
+}
+
+.bootcamp {
+  img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.schedule {
+  table {
+    border-spacing: 0;
+    margin: 10px auto 30px auto;
+
+    td {
+      text-align: left;
+      border: thin solid @schedule-bg-color;
+    }
+
+    td:first-child {
+      background-color: @schedule-bg-color;
+      padding: 5px 10px 5px 13px;
+      white-space: nowrap;
+      font-weight: 500;
+    }
+    td:last-child {
+      padding: 5px 8px;
+    }
+  }
+}
+
+.sponsors {
+  margin: 20px 0 10px 0;
+  img {
+    width: 150px;
+    height: 75px;
+    margin: 18px 0;
+  }
+
+  .large img {
+    width: 250px;
+    height: 75px;
+    margin: 0 0 15px 0;
+  }
+
+  .av {
+    padding-top: 14px;
+  }
+  .ntst {
+    padding-top: 7px;
+  }
+}
+
+.bottom {
+  .sponsor-us, footer {
+    font-weight: 600;
+  }
+  .sponsor-us {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  footer {
+    .logo {
+      margin: 24px 0 6px 0;
+    }
+    .social {
+      margin-top: 9px;
+      margin-bottom: 24px;
+      i {
+        padding: 0 6px;
+        font-size: 30px;
+      }
+      .facebook {
+        color: #3B5998;
+      }
+      .email {
+        color: #777;
+      }
+      .linkedin {
+        color: #111;
+      }
+    }
+  }
+}
+
+.modal-content {
+  h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+  }
+}
+
+#register-modal, #confirm-modal {
+  .modal-content {
+    padding: 20px;
+  }
+}
+
+#register-modal .modal-content {
+  background-color: @modal-bg-color;
+}
+
+.registration-announcements {
+  color: #444;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+#confirm-modal .modal-content {
+  background-color: #99FF99;
+  text-align: center;
+}
+
+#directions-modal .modal-content {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.register-form {
+  label {
+    font-weight: 400;
+  }
+  hr {
+    border-color: @modal-divider-color;
+  }
+  fieldset + hr {
+    margin-top: 12px;
+  }
+  .checkbox.other {
+    margin-top: -10px;
+    .form-control {
+      width: 8em;
+      display: inline;
+      padding-left: 8px;
+    }
+  }
+  .title, .title2 {
+    font-weight: bold;
+  }
+  .title2 {
+    margin-top: 18px;
+  }
+  .subtitle {
+    font-size: small;
+    color: lighten(@text-color, 10%);
+  }
+  .under-label {
+    margin-top: 5px;
+  }
+  .number-input {
+    width: 5em;
+  }
+  .submit-btn-container {
+    text-align: center;
+    margin-top: 8px;
+    input, button {
+      margin-top: 12px;
+    }
+  }
+}
+
+.error {
+  color:#F00;
+  font-weight: bold;
+}
+
+/** Prevent modal from hiding scroll bar **/
+/*
+.modal-open {
+  overflow-y: scroll;
+}
+
+body {
+  padding-right: 0 !important;
+  overflow-y: scroll;
+}
+*/
