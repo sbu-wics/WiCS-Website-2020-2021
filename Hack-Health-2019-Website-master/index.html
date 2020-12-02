@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>HackHealth: A hackathon from Women in Computer Science (WiCS) at Stony Brook University</title>
@@ -13,7 +14,8 @@
     <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon-144x144-precomposed.png">
     <link rel="icon" href="img/favicon/apple-touch-icon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.js"></script>
     <script src="https://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
     <script src="https://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
@@ -30,238 +32,267 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </head>
+
 <body id="top" class="center-align" style="overflow-x: hidden">
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top" style="background: black">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" style="color: white"  href="#top">HackHealth</a>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" style="background: black">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="color: white" href="#top">HackHealth</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" style="background: rgba(0, 0, 0, 0.68)">
+                <ul class="nav navbar-nav">
+                    <li><a style="color: white" href="#schedule">Schedule</a></li>
+                    <li><a style="color: white" href="#sponsors">Sponsors</a></li>
+                    <li><a style="color: white" href="#contact">Contact</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a style="color: white" role="button" target="_blank"
+                            href="https://bit.ly/hackhealth2021">Register</a>
+                    </li>
+                    <li><a style="color: white" role="button" target="_blank" href="#">Volunteer</a>
+                    </li>
+                    <li><a style="color: white" role="button" target="_blank" href="#">Become
+                            a Mentor</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
         </div>
-        <div id="navbar" class="navbar-collapse collapse" style="background: rgba(0, 0, 0, 0.68)">
-            <ul class="nav navbar-nav">
-                <li><a style="color: white" href="#schedule">Schedule</a></li>
-                <li><a style="color: white" href="#sponsors">Sponsors</a></li>
-                <li><a style="color: white" href="#contact">Contact</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a style="color: white" role="button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScvLN17v6y_CKBr6vjNBT3riISLFsuUkTWCHeQvwbm1nsQ9fw/viewform">Register</a></li>
-                <li><a style="color: white" role="button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSe7F-rVCxJlovbcnVkWcFZXxu2InO8oJRc81wO-6t7hVDjqUg/viewform">Volunteer</a></li>
-                <li><a style="color: white" role="button" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScvwScWraLezidUPMdguvGFJhJCIBzD2om_q4Xx4MR2DiK9Nw/viewform">Become a Mentor</a></li>
-            </ul>
-        </div><!--/.nav-collapse -->
-    </div>
-</nav>
+    </nav>
 
-<header>
-    <div id="banner"></div>
-</header>
+    <header>
+        <div id="banner"></div>
+    </header>
 
-<div id="about" class="content">
-    <div class="container center-align" style="text-align: center">
+    <div id="about" class="content">
+        <div class="container center-align" style="text-align: center">
 
-      <div class="image_holder">
-        <img alt="WiCS" class="responsive" style="position: relative; width: 500px; height: 355px" src="img/hackHealthStickersFinal.png"></a>
-      </div>
+            <div class="image_holder">
+                <img alt="WiCS" class="responsive" style="position: relative; width: 500px; height: 355px"
+                    src="img/HackHealth2020.png"></a>
+            </div>
 
-      <div class="description">
-          <p style="font-size: 18px; margin-top: 15px;"> HackHealth is a one-day, health-themed hackathon hosted by Women in Computer Science. It is devoted to being minority and beginner-friendly, and aims to provide a comfortable environment for everyone to develop their ideas and improve their skills.</p>
-          <div>
-            <a class="btn btn-pink red accent-4" style="color: white" href="https://docs.google.com/forms/d/e/1FAIpQLScvLN17v6y_CKBr6vjNBT3riISLFsuUkTWCHeQvwbm1nsQ9fw/viewform" role="button">
-                Register</a>
-            <a class="btn btn-pink red accent-4" style="color: white" href="https://docs.google.com/forms/d/e/1FAIpQLSe7F-rVCxJlovbcnVkWcFZXxu2InO8oJRc81wO-6t7hVDjqUg/viewform" role="button">
-                Volunteer</a>
-            <a class="btn btn-pink red accent-4" style="color: white" href="https://docs.google.com/forms/d/e/1FAIpQLScvwScWraLezidUPMdguvGFJhJCIBzD2om_q4Xx4MR2DiK9Nw/viewform" role="button">
-                Become a Mentor</a>
-          </div>
-          <hr>
-          <div class="wwww">
-              <div class="row">
-                  <div class="col-sm-6">
-                      <h2>What</h2>
-                      <p>
-                          A one day health-themed hackathon for
-                          hackers and designers of all skill levels
-                          and devoted to being minority-friendly
-                      </p>
-                      <p>
-                          <!-- <a class="btn btn-pink" href="img/hackhealth_flyer2019.png" target="_blank" role="button">
+            <div class="description">
+                <p style="font-size: 18px; margin-top: 15px;">HackHealth is a 24-hour health-themed hackathon, hosted by
+                    <a href="https://www3.cs.stonybrook.edu/~wics/">Women in Computer Science at Stony Brook
+                        University</a>, that welcomes all students and is devoted to being minority and
+                    beginner-friendly.
+                </p>
+                <div>
+                    <a class="btn btn-pink red accent-4" style="color: white" href="https://bit.ly/hackhealth2021"
+                        role="button">
+                        Register</a>
+                    <a class="btn btn-pink red accent-4" style="color: white" href="#" role="button">
+                        Volunteer</a>
+                    <a class="btn btn-pink red accent-4" style="color: white" href="#" role="button">
+                        Become a Mentor</a>
+                </div>
+                <hr>
+                <div class="wwww">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>What</h2>
+                            <p>
+                                A 24 hour health-themed hackathon devoted to being minority and
+                                beginner-friendly, providing a comfortable environment for everyone to develop their
+                                ideas and improve their skills.
+                            </p>
+                            <p>
+                                <!-- <a class="btn btn-pink" href="img/hackhealth_flyer2019.png" target="_blank" role="button">
                               More info Â»</a> -->
-                      </p>
-                  </div>
-                  <div class="col-sm-6">
-                      <h2>Who</h2>
-                      <p>
-                          Everyone is welcome<br>
-                          from freshmen to grad students<br>
-                          This is a capped attendance event
-                      </p>
-                      <p>
-                          <!-- <a class="btn btn-pink" role="button"
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>Who</h2>
+                            <p>
+                                Everyone is welcome from undergraduate to graduate students. Open to coders and
+                                designers of all skill levels.<br>
+                                This is a capped attendance event.
+                            </p>
+                            <p>
+                                <!-- <a class="btn btn-pink" role="button"
                              href="https://goo.gl/forms/Mt5skUnJSz2gm02q2">
                               Register now Â»</a> -->
-                      </p>
-                  </div>
+                            </p>
+                        </div>
 
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                    <h2>Where</h2>
-                    <p>
-                        GLS/HDV Center<br>
-                        Stony Brook University
-                    </p>
-                    <p>
-                        <a class="btn btn-pink red accent-4" role="button"
-                           data-toggle="modal" data-target="#directions-modal">
-                            Get directions »</a>
-                    </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h2>Where</h2>
+                            <p>
+                                Virtual on the HackHealth 2021 Discord Server. (Coming Soon)
+                            </p>
+                            <p>
+                                <a class="btn btn-pink red accent-4" role="button" data-toggle="modal"
+                                    data-target="#directions-modal">
+                                    Get directions »</a>
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2>When</h2>
+                            <p>
+                                February 12th - February 13th
+                                <br>
+                                Friday, 5PM - Saturday, 5PM
+                            </p>
+                            <p>
+                                <a class="btn btn-pink red accent-4" href="#schedule" role="button">
+                                    View schedule »</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <h2>When</h2>
-                    <p>
-                        February 8th, 2020
-                        <br>
-                        9 AM - 10 PM
-                    </p>
-                    <p>
-                        <a class="btn btn-pink red accent-4" href="#schedule" role="button">
-                            View schedule »</a>
-                    </p>
-                </div>
-              </div>
-          </div>
 
-          <p style="font-size: 22px">HackHealth may be one day only, but it is a real hackathon! There will be company sponsors, mentors, prizes, food, and, most importantly, company swag! </p>
-          <hr>
-          <h5>Check out some feedback from HackHealth 2019:</h5>
-          <blockquote style="border-left: 5px solid red">
-          It was a great experience for my first hackathon. I've always been very intimidated and self-conscious when it comes to coding with others and sharing my code, but this was a comfortable environment.
-          </blockquote><blockquote style="border-left: 5px solid red">
-          Yoga was awesome, felt a lot better when I came back to continue hacking on my project.
-          </blockquote><blockquote style="border-left: 5px solid red">
-          It was my first hackathon and it was a great first experience. I feel like I can do others now and not feel so scared about 'em
-          </blockquote><blockquote style="border-left: 5px solid red">
-          I can't believe there are google socks
-          </blockquote>
-      </div>
+                <p style="font-size: 22px">There will be company representatives, coding mentors, prizes, and free
+                    merch/goodies! </p>
+                <hr>
+                <h5>Check out some feedback from previous HackHealths:</h5>
+                <blockquote style="border-left: 5px solid red">
+                    It was a great experience for my first hackathon. I've always been very intimidated and
+                    self-conscious when it comes to coding with others and sharing my code, but this was a comfortable
+                    environment.
+                </blockquote>
+                <blockquote style="border-left: 5px solid red">
+                    Yoga was awesome, felt a lot better when I came back to continue hacking on my project.
+                </blockquote>
+                <blockquote style="border-left: 5px solid red">
+                    It was my first hackathon and it was a great first experience. I feel like I can do others now and
+                    not feel so scared about 'em.
+                </blockquote>
+                <blockquote style="border-left: 5px solid red">
+                    I can't believe there are Google socks.
+                </blockquote>
+            </div>
 
+            <hr>
 
+        </div>
+    </div>
+
+    <div class="bottom container">
+
+        <!--
+        <div class="bootcamp">
+            <h2 class="full-weight"> Boot Camp Week 2/3 - 2/6</h2>
+            <center>
+                <img style="width: 730px" src="img/bootcamp_redo.jpg">
+            </center>
+        </div>
+        
         <hr>
 
+        -->
 
-    </div>
-</div>
+        <div class="schedule">
 
-<div class="bottom container">
+            <h2 id="schedule" class="full-weight">Schedule</h2>
+            <h5>Coming Soon!</h5>
+            <!--
+            <table class="centered">
+                <tr>
+                    <td>9:30 AM</td>
+                    <td>Registration Begins; Breakfast</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Opening Ceremonies</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM</td>
+                    <td>Hacking Begins</td>
+                </tr>
+                <tr>
+                    <td>11:30 AM</td>
+                    <td>Intro to Data Science</td>
+                </tr>
+                <tr>
+                    <td>12:45 PM</td>
+                    <td>Intro to Computer Vision</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM</td>
+                    <td>Lunch</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Rubber Duck Painting Activity</td>
+                </tr>
+                <tr>
+                    <td>4:00 PM</td>
+                    <td>Intro to Building Web Apps with Python Flask</td>
+                </tr>
+                <tr>
+                    <td>5:30 PM</td>
+                    <td>Slime Making 101</td>
+                </tr>
+                <tr>
+                    <td>7:30 PM</td>
+                    <td>Hacking Ends; Dinner</td>
+                </tr>
+                <tr>
+                    <td>8:00 PM</td>
+                    <td>Judging Begins</td>
+                </tr>
+                <tr>
+                    <td>9:00 PM</td>
+                    <td>Judging Ends</td>
+                </tr>
+                <tr>
+                    <td>9:30 PM</td>
+                    <td>Closing Ceremonies</td>
+                </tr>
+                <tr>
+                    <td>10:00 PM</td>
+                    <td>HackHealth Ends</td>
+                </tr>
+            </table>
+            -->
+        </div>
 
-    <div class="bootcamp">
-        <h2 class="full-weight"> Boot Camp Week 2/3 - 2/6</h2>
-        <center>
-          <img style="width: 730px" src="img/bootcamp_redo.jpg">
-        </center>
-    </div>
+        <!--
+        <hr>
+        -->
 
-    <hr>
-
-    <div class="schedule">
-        <h2 id="schedule" class="full-weight">Schedule</h2>
-        <table class="centered">
-            <tr>
-                <td>9:30 AM</td>
-                <td>Registration Begins; Breakfast</td>
-            </tr>
-            <tr>
-                <td>10:00 AM</td>
-                <td>Opening Ceremonies</td>
-            </tr>
-            <tr>
-                <td>11:00 AM</td>
-                <td>Hacking Begins</td>
-            </tr>
-            <tr>
-                <td>11:30 AM</td>
-                <td>Intro to Data Science</td>
-            </tr>
-            <tr>
-                <td>12:45 PM</td>
-                <td>Intro to Computer Vision</td>
-            </tr>
-            <tr>
-                <td>2:00 PM</td>
-                <td>Lunch</td>
-            </tr>
-            <tr>
-                <td>3:00 PM</td>
-                <td>Rubber Duck Painting Activity</td>
-            </tr>
-            <tr>
-                <td>4:00 PM</td>
-                <td>Intro to Building Web Apps with Python Flask</td>
-            </tr>
-            <tr>
-                <td>5:30 PM</td>
-                <td>Slime Making 101</td>
-            </tr>
-            <tr>
-                <td>7:30 PM</td>
-                <td>Hacking Ends; Dinner</td>
-            </tr>
-            <tr>
-                <td>8:00 PM</td>
-                <td>Judging Begins</td>
-            </tr>
-            <tr>
-                <td>9:00 PM</td>
-                <td>Judging Ends</td>
-            </tr>
-            <tr>
-                <td>9:30 PM</td>
-                <td>Closing Ceremonies</td>
-            </tr>
-            <tr>
-                <td>10:00 PM</td>
-                <td>HackHealth Ends</td>
-            </tr>
-        </table>
-    </div>
-
-    <hr>
-
-    <!-- <div id="speakers">
+        <!-- <div id="speakers">
         <h2 id="speakers" class="full-weight"> Opening Ceremony Speakers </h2>
         <p>The speaker list will be posted closer to HackHealth, thank you for your patience!</p>
     </div> -->
 
-    <hr>
+        <hr>
 
-    <h2 id="sponsors" class="full-weight">Sponsors</h2>
-    <div class="sponsors">
-      <div class="row">
-            <a href="https://softheon.com" target="_blank">
-                <img class="softeon" alt="Softheon" style="width: 350px" src="img/Softheon_Updated.png"></a>
-      </div>
-      <div class="row">
-            <a href="http://stickergiant.com" target="_blank">
-                <img class="fireeye" alt="StickerGiant" src="img/StickerGiant-Flame-Logo.png"></a>
-      </div>
-      <div class="row">
-            <a href="http://avi.com" target="_blank">
-                <img class="avi" alt="Applied Visions" src="img/Applied Visions.png"></a>
-      </div>
-        <!-- <div class="row large">
+        <h2 id="sponsors" class="full-weight">Sponsors</h2>
+
+        <div class="sponsors">
+            <h5>Also, Coming Soon!</h5>
+            <!--
+            <div class="row">
+                <a href="https://softheon.com" target="_blank">
+                    <img class="softeon" alt="Softheon" style="width: 350px" src="img/Softheon_Updated.png"></a>
+            </div>
+            <div class="row">
+                <a href="http://stickergiant.com" target="_blank">
+                    <img class="fireeye" alt="StickerGiant" src="img/StickerGiant-Flame-Logo.png"></a>
+            </div>
+            <div class="row">
+                <a href="http://avi.com" target="_blank">
+                    <img class="avi" alt="Applied Visions" src="img/Applied Visions.png"></a>
+            </div>
+            -->
+
+            <!-- <div class="row large">
 
             <div class="col-sm-4">
                 <a href="http://google.com" target="_blank">
                     <img class="google" alt="Google" src="img/google.png"></a>
             </div>
-
-
 
             <div class="col-sm-4">
                 <a href="http://facebook.com" target="_blank">
@@ -272,10 +303,6 @@
                 <a href="https://www.zebra.com" target="_blank">
                     <img class="zebra" alt="Zebra" src="img/Zebra Technologies.png"></a>
             </div>
-
-
-
-
 
              <div class="col-sm-4">
                 <a href="http://twilio.com" target="_blank">
@@ -315,7 +342,7 @@
         </div>
 
         <hr>
-            <!-- <div class="row">
+        <!-- <div class="row">
             <div class="col-sm-4">
                 <a href="http://github.com" target="_blank">
                     <img class="github" alt="Github" src="img/github.png"></a>
@@ -346,10 +373,10 @@
         </div>-->
     </div>
     <div class="sponsor-us" style="text-align: center">
-      <div class="logo">
-          <a href="http://www3.cs.stonybrook.edu/~wics/">
-              <img alt="WiCS" src="img/WiCS_Transparent.png"></a>
-      </div>
+        <div class="logo">
+            <a href="http://www3.cs.stonybrook.edu/~wics/">
+                <img alt="WiCS" src="img/WiCS_Transparent.png"></a>
+        </div>
         To sponsor, contact us at
         <a href="mailto:wics@cs.stonybrook.edu">wics@cs.stonybrook.edu</a>
     </div>
@@ -365,207 +392,224 @@
         </div>
         <div class="social" style="background: black; height: 52px">
 
-          <a style="color: white" href="http://www3.cs.stonybrook.edu/~wics/">Women in Computer Science</a>
-          <a style="color: white">at Stony Brook University  |</a>
+            <a style="color: white" href="http://www3.cs.stonybrook.edu/~wics/">Women in Computer Science</a>
+            <a style="color: white" href="https://www.stonybrook.edu/">at Stony Brook University |</a>
             <a href="https://www.facebook.com/groups/sbuwics/">
-                <i style="font-size: 25px; color: white" title="Facebook" class="facebook fa fa-facebook-official" aria-hidden="true"></i></a>
+                <i style="font-size: 25px; color: white" title="Facebook" class="facebook fa fa-facebook-official"
+                    aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/sbu_wics/">
+                <i style="font-size: 25px; color: white" title="Instagram" class="facebook fa fa-instagram"
+                    aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/groups/8543587">
-                <i style="font-size: 25px; color: white" class="linkedin fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <i style="font-size: 25px; color: white" class="linkedin fa fa-linkedin-square"
+                    aria-hidden="true"></i></a>
             <a href="mailto:wics@cs.stonybrook.edu">
-                <i style="font-size: 25px; color: white" title="Email" class="email fa fa-envelope-o" aria-hidden="true"></i></a>
+                <i style="font-size: 25px; color: white" title="Email" class="email fa fa-envelope-o"
+                    aria-hidden="true"></i></a>
         </div>
     </footer>
-</div>
+    </div>
 
-<div id="register-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <h3>Register for HackHealth</h3>
-            <div class="registration-announcements">
-                <div>Waitlist registration began 8/26</div>
-                <!-- <div>Registration probability at this time: <span style="color: #090; font-weight: bold">high</span></div> -->
-                <div>Recruiting offered even on waitlist</div>
-            </div>
-            <div>
-                <form role="form" method="post" class="register-form">
-                    <div class="form-group">
-                        <div class="title">Name</div>
-                        <input autofocus type="text" class="form-control under-label" id="name" name="name" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <div class="title">Email address</div>
-                        <input type="email" class="form-control under-label" id="email" name="email" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <div class="title">Resume (PDF format)</div>
-                        <div class="subtitle">Optional but there will be recruiting at HackHealth!</div>
-                        <input type="file" class="form-control under-label" id="resume" name="resume">
-                    </div>
-                    <hr>
-                    <fieldset>
-                        <div class="title">Gender</div>
-                        <div class="radio">
-                            <label><input type="radio" name="gender" value="Male" required aria-required="true">Male</label>
+    <div id="register-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h3>Register for HackHealth</h3>
+                <div class="registration-announcements">
+                    <div>Waitlist registration began 8/26</div>
+                    <!-- <div>Registration probability at this time: <span style="color: #090; font-weight: bold">high</span></div> -->
+                    <div>Recruiting offered even on waitlist</div>
+                </div>
+                <div>
+                    <form role="form" method="post" class="register-form">
+                        <div class="form-group">
+                            <div class="title">Name</div>
+                            <input autofocus type="text" class="form-control under-label" id="name" name="name" required
+                                aria-required="true">
                         </div>
-                        <div class="radio">
-                            <label><input type="radio" name="gender" value="Female">Female</label>
+                        <div class="form-group">
+                            <div class="title">Email address</div>
+                            <input type="email" class="form-control under-label" id="email" name="email" required
+                                aria-required="true">
                         </div>
-                        <div class="radio">
-                            <label><input type="radio" name="gender" value="Other">Other</label>
+                        <div class="form-group">
+                            <div class="title">Resume (PDF format)</div>
+                            <div class="subtitle">Optional but there will be recruiting at HackHealth!</div>
+                            <input type="file" class="form-control under-label" id="resume" name="resume">
                         </div>
-                        <div class="radio">
-                            <label><input type="radio" name="gender" value="">Prefer not to answer</label>
+                        <hr>
+                        <fieldset>
+                            <div class="title">Gender</div>
+                            <div class="radio">
+                                <label><input type="radio" name="gender" value="Male" required
+                                        aria-required="true">Male</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="gender" value="Female">Female</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="gender" value="Other">Other</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="gender" value="">Prefer not to answer</label>
+                            </div>
+                            <label for="gender" class="error" style="display:none;"></label>
+                        </fieldset>
+                        <hr>
+                        <fieldset>
+                            <div class="title">Year</div>
+                            <div class="radio">
+                                <label><input type="radio" name="year" value="Freshman" required
+                                        aria-required="true">Freshman</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="year" value="Sophomore">Sophomore</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="year" value="Junior">Junior</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="year" value="Senior">Senior</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="year" value="Grad student">Grad student</label>
+                            </div>
+                            <label for="year" class="error" style="display:none;"></label>
+                        </fieldset>
+                        <hr>
+                        <fieldset>
+                            <div class="title">T-Shirt Size</div>
+                            <div class="radio">
+                                <label><input type="radio" name="tshirt" value="XS" required
+                                        aria-required="true">XS</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="tshirt" value="S">S</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="tshirt" value="M">M</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="tshirt" value="L">L</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="tshirt" value="XL">XL</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="tshirt" value="Women's S">Women's S</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="tshirt" value="Women's M">Women's M</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="tshirt" value="Women's L">Women's L</label>
+                            </div>
+                            <label for="tshirt" class="error" style="display:none;"></label>
+                        </fieldset>
+                        <hr>
+                        <fieldset>
+                            <div class="title">Dietary restrictions</div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="diet" value="Vegetarian">Vegetarian</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="diet" value="Vegan">Vegan</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="diet" value="Kosher">Kosher</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="diet" value="Halal">Halal</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="diet" value="Gluten-free">Gluten-free</label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="diet" value="Dairy-free">Dairy-free</label>
+                            </div>
+                            <div class="checkbox other">
+                                <label>Other allergy: <input class="form-control" type="text" name="diet"
+                                        maxlength="20"></label>
+                            </div>
+                            <label for="diet" class="error" style="display:none;"></label>
+                        </fieldset>
+                        <hr>
+                        <fieldset>
+                            <div class="title">Is this your first Hackathon?</div>
+                            <div class="radio">
+                                <label><input type="radio" name="first_hackathon" value="Yes" required
+                                        aria-required="true">Yes</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="first_hackathon" value="No">No</label>
+                            </div>
+                            <label for="first_hackathon" class="error" style="display:none;"></label>
+                        </fieldset>
+                        <div class="title2">If not, how many have you been to?</div>
+                        <input type="text" class="form-control number-input under-label" maxlength="4"
+                            name="num_hackathons">
+                        <hr>
+                        <fieldset>
+                            <div class="title">Will your hack have a health theme?</div>
+                            <div class="radio">
+                                <label><input type="radio" name="theme" value="Nutrition" required
+                                        aria-required="true">Nutrition</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="theme" value="Fitness">Fitness</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="theme" value="Mental health">Mental health</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="theme" value="Medicine">Medicine</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="theme" value="Other">Other</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="theme" value="Don't know yet">Don't know yet</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="theme" value="Non-health">Non-health</label>
+                            </div>
+                            <label for="theme" class="error" style="display:none;"></label>
+                        </fieldset>
+                        <hr>
+                        <div class="title">What do you want to work on?</div>
+                        <div class="subtitle">Be as specific or general as you want</div>
+                        <input type="text" class="form-control under-label" name="idea" maxlength="140">
+                        <hr>
+                        <div class="title">Any other questions or concerns?</div>
+                        <input type="text" class="form-control under-label" name="other" maxlength="140">
+                        <div class="submit-btn-container">
+                            <div id="registration-error" class="error" style="display:none;"></div>
+                            <button type="submit" class="btn btn-default" disabled>Submit registration</button>
                         </div>
-                        <label for="gender" class="error" style="display:none;"></label>
-                    </fieldset>
-                    <hr>
-                    <fieldset>
-                        <div class="title">Year</div>
-                        <div class="radio">
-                            <label><input type="radio" name="year" value="Freshman" required aria-required="true">Freshman</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="year" value="Sophomore">Sophomore</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="year" value="Junior">Junior</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="year" value="Senior">Senior</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="year" value="Grad student">Grad student</label>
-                        </div>
-                        <label for="year" class="error" style="display:none;"></label>
-                    </fieldset>
-                    <hr>
-                    <fieldset>
-                        <div class="title">T-Shirt Size</div>
-                        <div class="radio">
-                            <label><input type="radio" name="tshirt" value="XS" required aria-required="true">XS</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="tshirt" value="S">S</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="tshirt" value="M">M</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="tshirt" value="L">L</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="tshirt" value="XL">XL</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="tshirt" value="Women's S">Women's S</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="tshirt" value="Women's M">Women's M</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="tshirt" value="Women's L">Women's L</label>
-                        </div>
-                        <label for="tshirt" class="error" style="display:none;"></label>
-                    </fieldset>
-                    <hr>
-                    <fieldset>
-                        <div class="title">Dietary restrictions</div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="diet" value="Vegetarian">Vegetarian</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="diet" value="Vegan">Vegan</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="diet" value="Kosher">Kosher</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="diet" value="Halal">Halal</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="diet" value="Gluten-free">Gluten-free</label>
-                        </div>
-                        <div class="checkbox">
-                            <label><input type="checkbox" name="diet" value="Dairy-free">Dairy-free</label>
-                        </div>
-                        <div class="checkbox other">
-                            <label>Other allergy: <input class="form-control" type="text" name="diet" maxlength="20"></label>
-                        </div>
-                        <label for="diet" class="error" style="display:none;"></label>
-                    </fieldset>
-                    <hr>
-                    <fieldset>
-                        <div class="title">Is this your first Hackathon?</div>
-                        <div class="radio">
-                            <label><input type="radio" name="first_hackathon" value="Yes" required aria-required="true">Yes</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="first_hackathon" value="No">No</label>
-                        </div>
-                        <label for="first_hackathon" class="error" style="display:none;"></label>
-                    </fieldset>
-                    <div class="title2">If not, how many have you been to?</div>
-                    <input type="text" class="form-control number-input under-label" maxlength="4" name="num_hackathons">
-                    <hr>
-                    <fieldset>
-                        <div class="title">Will your hack have a health theme?</div>
-                        <div class="radio">
-                            <label><input type="radio" name="theme" value="Nutrition" required aria-required="true">Nutrition</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="theme" value="Fitness">Fitness</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="theme" value="Mental health">Mental health</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="theme" value="Medicine">Medicine</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="theme" value="Other">Other</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="theme" value="Don't know yet">Don't know yet</label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="theme" value="Non-health">Non-health</label>
-                        </div>
-                        <label for="theme" class="error" style="display:none;"></label>
-                    </fieldset>
-                    <hr>
-                    <div class="title">What do you want to work on?</div>
-                    <div class="subtitle">Be as specific or general as you want</div>
-                    <input type="text" class="form-control under-label" name="idea" maxlength="140">
-                    <hr>
-                    <div class="title">Any other questions or concerns?</div>
-                    <input type="text" class="form-control under-label" name="other" maxlength="140">
-                    <div class="submit-btn-container">
-                        <div id="registration-error" class="error" style="display:none;"></div>
-                        <button type="submit" class="btn btn-default" disabled>Submit registration</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-<div id="confirm-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <h3>Thank you for registering!</h3>
-            <p>You will receive a confirmation email shortly.</p>
-            <button class="btn btn-success" type="button" data-dismiss="modal">Okay!</button>
+    <div id="confirm-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <h3>Thank you for registering!</h3>
+                <p>You will receive a confirmation email shortly.</p>
+                <button class="btn btn-success" type="button" data-dismiss="modal">Okay!</button>
+            </div>
         </div>
     </div>
-</div>
 
-<div id="directions-modal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12060.614730614372!2d-73.1233889!3d40.9123761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x734c1ca56abdcc85!2sStony+Brook+University!5e0!3m2!1sen!2sus!4v1467834041115"
+    <div id="directions-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12060.614730614372!2d-73.1233889!3d40.9123761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x734c1ca56abdcc85!2sStony+Brook+University!5e0!3m2!1sen!2sus!4v1467834041115"
                     width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
         </div>
     </div>
-</div>
 </body>
+
 </html>
