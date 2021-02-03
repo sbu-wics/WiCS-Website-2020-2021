@@ -145,7 +145,7 @@ h2 {
 .content {
   color: @wwww-text-color;
   text-align: center;
-  padding-bottom: 36px;
+  /* padding-bottom: 36px; */
 
   hr {
     border-color: @wwww-text-color;
